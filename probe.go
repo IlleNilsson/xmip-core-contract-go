@@ -31,7 +31,7 @@ static int probe(void) {
     XmipStr descriptor = { (const uint8_t *)"any", 3 };
     XmipStr key = { (const uint8_t *)"descriptor", 10 };
     XmipStr implied = { NULL, 0 };
-    Source source = { (const uint8_t *)"xmip ping-pong", 14, 0 };
+    Source source = { (const uint8_t *)"xmip round-trip", 15, 0 };
     XmipReader reader = { &source, read_source };
 
     memset(&module, 0, sizeof module);
